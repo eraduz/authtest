@@ -1,5 +1,5 @@
 <?php
-require 'Connection.php';
+require './Connection.php';
 Connection::openConnection();
 $sql = 'SELECT * FROM users';
 $stmt = Connection::$conn->prepare($sql);
